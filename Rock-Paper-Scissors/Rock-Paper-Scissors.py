@@ -1,9 +1,8 @@
-from veritas_lib import get_computer_rps
-from veritas_lib import who_is_winner
-
-your_choice = input("What is your choice? [rock, paper, or scissors]")
-
-computer_choice = get_computer_rps()
-
-winner = who_is_winner(your_choice, computer_choice)
+from veritas_lib import *
+my = input("Choose: Rock, Paper, or Scissors: ")
+print("You chose: " + my)
+comp = get_computer_rps()
+print("Computer chooses: " + comp)
+winner = who_is_winner(my, comp)
 print(winner)
+
